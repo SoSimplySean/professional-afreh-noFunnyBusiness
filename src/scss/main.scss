@@ -1,1 +1,34 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar {
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  &__cta {
+  }
+}
+
+.about {
+  &__col2 {
+    overflow: hidden;
+  }
+
+  &__img {
+  }
+}
+
+.img-fluid {
+  width: 100%;
+}

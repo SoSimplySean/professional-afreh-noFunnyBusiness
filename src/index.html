@@ -11,14 +11,8 @@
     <!-- === BOOTSTRAP JS === -->
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
 
@@ -27,6 +21,107 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container"><h1 class="bg-primary">chicken</h1></div>
+    <!-- === NAVBAR START === -->
+    <nav class="navbar">
+      <div class="container justify-content-end py-4">
+        <a href="#home" class="navbar__logo"
+          ><img src="./img/logo.png" alt=""
+        /></a>
+        <button class="btn btn-primary navbar__cta" type="submit">
+          GET YOUR SET TODAY
+        </button>
+      </div>
+    </nav>
+    <!-- === NAVBAR END === -->
+
+    <!-- SLIDER START -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide container"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/heroSlide1.png" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/heroSlide1.png" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/heroSlide1.png" class="d-block w-100" alt="" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- SLIDER END -->
+
+    <!-- ABOUT START -->
+    <div class="about container my-10">
+      <div class="row gx-5">
+        <div class="about__col1 col-md border p-5">
+          <h2>I AM AFRESH AND I DON'T DO FUNNY BUSINESS</h2>
+        </div>
+        <div class="about__col2 col-md border">
+          <img class="about__img" src="./img/heroSlide1.png" alt="" />
+        </div>
+        <div class="about__col3 col-md border">
+          <h3>
+            Hey. I'm very happy to finally share with you, GMK No Funny
+            Business.
+          </h3>
+          <p>
+            As an enthusiast of art, I loved the idea of transferring the
+            biggest and most known paintings on keyboards, but I still wanted to
+            keep it simple. Most of the paintings I used were painted on canvas,
+            hence I immediately knew that the main color of this set has to be
+            cream! But wait, there's more!
+          </p>
+          <button class="btn btn-primary navbar__cta" type="submit">
+            GET YOUR SET TODAY
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT END -->
+
+    <div class="container">
+      <h2 class="text-center mb-3">RENDERS</h2>
+      <img src="./img/heroSlide1.png" alt="" class="img-fluid" />
+    </div>
   </body>
 </html>
