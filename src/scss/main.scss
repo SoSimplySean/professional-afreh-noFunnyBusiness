@@ -1,4 +1,42 @@
+$primary: #e8e2cc;
+$secondary: #b9005f;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+// BOOTSTRAP EDITS
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10: $spacer * 9,
+);
+
+$font-family-base: "Montserrat", sans-serif;
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  box-sizing: border-box;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+// CUSTOM CSS
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 
 .navbar {
   position: relative;
@@ -17,6 +55,8 @@
   }
 
   &__cta {
+    border-radius: 0;
+    font-size: 14px;
   }
 }
 
@@ -25,10 +65,40 @@
     overflow: hidden;
   }
 
-  &__img {
+  &__header {
+    font-size: 2rem;
+  }
+
+  &__set-number {
+    font-size: 3rem;
+    color: #d6d5d5;
+  }
+
+  &__cta {
+    font-size: 18px;
   }
 }
 
-.img-fluid {
-  width: 100%;
+.conclusion {
+  hr {
+    border: none;
+    width: 70px;
+    height: 2px;
+    color: $secondary;
+    opacity: 1;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+  &__text:before {
+    content: "";
+  }
+}
+
+.person {
+  &__header {
+    font-size: 18px;
+  }
 }

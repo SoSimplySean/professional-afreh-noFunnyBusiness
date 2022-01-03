@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- === STYLESHEET === -->
-    <link rel="stylesheet" href="./scss/main.scss" />
+    <!-- <link rel="stylesheet" href="./scss/main.scss" /> -->
+    <link rel="stylesheet" href="../css/main.css" />
 
-    <!-- === BOOTSTRAP JS === -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <!-- === OWL STYLESHEET === -->
+    <link rel="stylesheet" href="./owl/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl/assets/owl.theme.default.min.css" />
 
-    <!-- === MAIN JS === -->
-    <script defer src="./js/mainFunctions.js"></script>
+    <!-- === BOOTSTRAP ICONS === -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -27,14 +28,14 @@
         <a href="#home" class="navbar__logo"
           ><img src="./img/logo.png" alt=""
         /></a>
-        <button class="btn btn-primary navbar__cta" type="submit">
-          GET YOUR SET TODAY
+        <button class="btn btn-secondary text-white navbar__cta" type="submit">
+          PURCHASE NOW<i class="bi bi-chevron-double-right ms-2"></i>
         </button>
       </div>
     </nav>
     <!-- === NAVBAR END === -->
 
-    <!-- SLIDER START -->
+    <!-- === SLIDER START === -->
     <div
       id="carouselExampleIndicators"
       class="carousel slide container"
@@ -88,40 +89,178 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- SLIDER END -->
+    <!-- === SLIDER END === -->
 
-    <!-- ABOUT START -->
+    <!-- === ABOUT START === -->
     <div class="about container my-10">
       <div class="row gx-5">
-        <div class="about__col1 col-md border p-5">
-          <h2>I AM AFRESH AND I DON'T DO FUNNY BUSINESS</h2>
+        <div
+          class="
+            about__col1
+            col-md
+            p-5
+            d-flex
+            justify-content-center
+            flex-column
+          "
+        >
+          <h2 class="about__set-number">04</h2>
+          <h2 class="about__header">
+            I AM AFRESH AND I DON'T DO
+            <span class="text-secondary">FUNNY BUSINESS</span>
+          </h2>
         </div>
-        <div class="about__col2 col-md border">
+        <div class="about__col2 p-0 col-md">
           <img class="about__img" src="./img/heroSlide1.png" alt="" />
         </div>
-        <div class="about__col3 col-md border">
+        <div
+          class="
+            about__col3
+            col-md
+            p-5
+            d-flex
+            justify-content-center
+            flex-column
+          "
+        >
           <h3>
             Hey. I'm very happy to finally share with you, GMK No Funny
             Business.
           </h3>
-          <p>
+          <p class="my-3">
             As an enthusiast of art, I loved the idea of transferring the
             biggest and most known paintings on keyboards, but I still wanted to
             keep it simple. Most of the paintings I used were painted on canvas,
             hence I immediately knew that the main color of this set has to be
             cream! But wait, there's more!
           </p>
-          <button class="btn btn-primary navbar__cta" type="submit">
-            GET YOUR SET TODAY
-          </button>
+          <a
+            href="http://google.com"
+            class="text-decoration-none text-secondary mt-3"
+            ><h3 class="about__cta">
+              SHOW SOME LOVE<i class="bi bi-chevron-double-right ms-2"></i></h3
+          ></a>
         </div>
       </div>
     </div>
-    <!-- ABOUT END -->
+    <!-- === ABOUT END === -->
 
-    <div class="container">
+    <!-- === RENDERS START === -->
+    <div class="container my-10">
       <h2 class="text-center mb-3">RENDERS</h2>
+      <div class="row my-4">
+        <div class="col">
+          <img src="./img/heroSlide1.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md">
+          <img src="./img/heroSlide1.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md">
+          <img src="./img/heroSlide1.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md">
+          <img src="./img/heroSlide1.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!-- === RENDERS END === -->
+
+    <!-- === KITS START === -->
+    <div class="container my-10">
+      <h2 class="text-center mb-3">KITS</h2>
+      <div class="row my-4">
+        <div class="col">
+          <img src="./img/kit1.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md">
+          <img src="./img/kit2.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md">
+          <img src="./img/kit3.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md">
+          <img src="./img/kit4.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!-- === KITS END === -->
+
+    <!-- === DESKMAT START === -->
+    <div class="container my-10">
+      <h2 class="text-center mb-3">DESKMATS</h2>
       <img src="./img/heroSlide1.png" alt="" class="img-fluid" />
     </div>
+    <!-- === DESKMAT END === -->
+
+    <!-- === COLLABS START === -->
+    <div class="container my-10">
+      <h2 class="text-center mb-3">COLLABS</h2>
+      <h3 class="text-center">THOK • ARCHETYPE • LUXECABLES</h3>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores porro
+        atque hic distinctio similique ex sint quibusdam cupiditate autem
+        molestias.
+      </p>
+    </div>
+    <div class="owl-carousel">
+      <div><img src="./img/heroSlide1.png" alt="" class="img-fluid" /></div>
+      <div><img src="./img/heroSlide1.png" alt="" class="img-fluid" /></div>
+      <div><img src="./img/heroSlide1.png" alt="" class="img-fluid" /></div>
+      <div><img src="./img/heroSlide1.png" alt="" class="img-fluid" /></div>
+    </div>
+    <!-- === COLLABS END === -->
+
+    <!-- === CONCLUSION START === -->
+    <div class="conclusion container mt-10">
+      <img src="./img/endBanner.png" alt="" class="img-fluid" />
+      <div class="d-flex justify-content-center align-items-center">
+        <hr />
+        <p class="conclusion__text text-center text-secondary my-5 mx-3">
+          THE END
+        </p>
+        <hr />
+      </div>
+    </div>
+    <!-- === CONCLUSION END === -->
+
+    <!-- === PERSON START === -->
+    <div class="container person my-5 bg-primary p-5">
+      <h3 class="person__header mb-3 text-secondary">ABOUT PERSON</h3>
+      <p class="mb-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta
+        vero, tempora pariatur, ad id deleniti recusandae molestiae quam nam
+        quaerat! Aliquam animi iste, magni dolor dolore tenetur architecto
+        debitis explicabo maxime quisquam, exercitationem et quae. Fugit,
+        beatae. Voluptate, aliquid?
+      </p>
+    </div>
+    <!-- === PERSON END === -->
+
+    <!-- === FIXED BAR START === -->
+    <p class="text-center mb-3">LET ME KNOW IF YOU’RE INTERESTED</p>
+    <!-- === FIXED BAR END === -->
+
+    <!-- === BOOTSTRAP JS === -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- === OWL JS === -->
+    <script src="./js/jquery.js"></script>
+    <script src="./owl/owl.carousel.min.js"></script>
+
+    <!-- === MAIN JS === -->
+    <script src="./js/mainFunctions.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
   </body>
 </html>
