@@ -63,6 +63,13 @@ h3 {
 .about {
   &__col2 {
     overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    height: 100%;
+    left: -40px;
   }
 
   &__header {
@@ -79,6 +86,20 @@ h3 {
   }
 }
 
+.render {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.kit {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .conclusion {
   hr {
     border: none;
@@ -90,10 +111,6 @@ h3 {
 
   &__text {
     font-size: 14px;
-  }
-
-  &__text:before {
-    content: "";
   }
 }
 

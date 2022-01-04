@@ -12359,6 +12359,13 @@ h3, .h3 {
 
 .about__col2 {
   overflow: hidden;
+  position: relative;
+}
+
+.about__img {
+  position: absolute;
+  height: 100%;
+  left: -40px;
 }
 
 .about__header {
@@ -12374,6 +12381,18 @@ h3, .h3 {
   font-size: 18px;
 }
 
+.render img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.kit img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .conclusion hr {
   border: none;
   width: 70px;
@@ -12384,10 +12403,6 @@ h3, .h3 {
 
 .conclusion__text {
   font-size: 14px;
-}
-
-.conclusion__text:before {
-  content: "";
 }
 
 .person__header {
