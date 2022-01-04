@@ -12,6 +12,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  7: $spacer * 5,
   10: $spacer * 9,
 );
 
@@ -60,16 +61,50 @@ h3 {
   }
 }
 
+.carousel {
+  h3 {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  hr {
+    border: none;
+    width: 40px;
+    height: 2px;
+    color: $secondary;
+    opacity: 1;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
+}
+
 .about {
   &__col2 {
     overflow: hidden;
+    object-fit: contain;
     position: relative;
+  }
+
+  &__img_container {
   }
 
   &__img {
     position: absolute;
     height: 100%;
-    left: -40px;
   }
 
   &__header {
@@ -100,6 +135,12 @@ h3 {
   }
 }
 
+.collab {
+  h3 {
+    font-size: 20px;
+  }
+}
+
 .conclusion {
   hr {
     border: none;
@@ -117,5 +158,31 @@ h3 {
 .person {
   &__header {
     font-size: 18px;
+  }
+}
+
+.bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.display-none {
+  display: none;
+}
+
+// Make the about image show up
+@media only screen and (max-width: 768px) {
+  .navbar__logo {
+    margin-left: 0;
+  }
+
+  .about__img {
+    position: static;
+    width: 100%;
   }
 }
