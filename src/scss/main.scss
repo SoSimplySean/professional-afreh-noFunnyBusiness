@@ -90,6 +90,11 @@ h3 {
     transform: translateY(-50%);
     z-index: 9999;
   }
+
+  &-item {
+    min-height: 300px;
+    max-height: 729px;
+  }
 }
 
 .about {
@@ -137,7 +142,7 @@ h3 {
 
 .collab {
   h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -184,5 +189,10 @@ h3 {
   .about__img {
     position: static;
     width: 100%;
+  }
+
+  .carousel__img {
+    width: auto !important;
+    left: -300px;
   }
 }

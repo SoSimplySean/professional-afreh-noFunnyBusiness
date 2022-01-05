@@ -12746,6 +12746,11 @@ h3, .h3 {
   z-index: 9999;
 }
 
+.carousel-item {
+  min-height: 300px;
+  max-height: 729px;
+}
+
 .about__col2 {
   overflow: hidden;
   -o-object-fit: contain;
@@ -12784,7 +12789,7 @@ h3, .h3 {
 }
 
 .collab h3, .collab .h3 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .conclusion hr {
@@ -12824,5 +12829,9 @@ h3, .h3 {
   .about__img {
     position: static;
     width: 100%;
+  }
+  .carousel__img {
+    width: auto !important;
+    left: -300px;
   }
 }
