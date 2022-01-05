@@ -59,6 +59,12 @@ h3 {
     border-radius: 0;
     font-size: 14px;
   }
+
+  &__cta:hover {
+    background-color: white;
+    border: 1px solid $secondary;
+    color: $secondary !important;
+  }
 }
 
 .carousel {
@@ -95,6 +101,17 @@ h3 {
     min-height: 300px;
     max-height: 729px;
   }
+
+  &__cta {
+    border-radius: 0;
+    font-size: 14px;
+  }
+
+  &__cta:hover {
+    background-color: $secondary;
+    border: 1px solid $secondary;
+    color: white !important;
+  }
 }
 
 .about {
@@ -123,13 +140,31 @@ h3 {
 
   &__cta {
     font-size: 18px;
+    transition: 0.2s;
+  }
+
+  &__cta:hover {
+    color: black !important;
   }
 }
 
 .render {
+  .row {
+    overflow: hidden;
+  }
+
+  .col-md {
+    overflow: hidden;
+  }
+
   img {
     height: 100%;
     object-fit: cover;
+    transition: 0.7s ease;
+  }
+
+  img:hover {
+    transform: scale(0.95);
   }
 }
 
@@ -137,6 +172,23 @@ h3 {
   img {
     height: 100%;
     object-fit: cover;
+    transition: 0.7s ease;
+  }
+
+  img:hover {
+    transform: scale(0.95);
+  }
+}
+
+.deskmat {
+  img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s ease;
+  }
+
+  img:hover {
+    transform: scale(0.95);
   }
 }
 
@@ -174,6 +226,12 @@ h3 {
   font-size: 14px;
   font-weight: bold;
   z-index: 999;
+  transition: 0.5s ease;
+}
+
+.bar:hover {
+  background-color: $secondary !important;
+  color: white !important;
 }
 
 .display-none {

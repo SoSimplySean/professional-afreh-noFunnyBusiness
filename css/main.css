@@ -12716,6 +12716,12 @@ h3, .h3 {
   font-size: 14px;
 }
 
+.navbar__cta:hover {
+  background-color: white;
+  border: 1px solid #b9005f;
+  color: #b9005f !important;
+}
+
 .carousel h3, .carousel .h3 {
   font-size: 12px;
 }
@@ -12751,6 +12757,17 @@ h3, .h3 {
   max-height: 729px;
 }
 
+.carousel__cta {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.carousel__cta:hover {
+  background-color: #b9005f;
+  border: 1px solid #b9005f;
+  color: white !important;
+}
+
 .about__col2 {
   overflow: hidden;
   -o-object-fit: contain;
@@ -12774,18 +12791,59 @@ h3, .h3 {
 
 .about__cta {
   font-size: 18px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about__cta:hover {
+  color: black !important;
+}
+
+.render .row {
+  overflow: hidden;
+}
+
+.render .col-md {
+  overflow: hidden;
 }
 
 .render img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.render img:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .kit img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.kit img:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.deskmat img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.deskmat img:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .collab h3, .collab .h3 {
@@ -12816,6 +12874,13 @@ h3, .h3 {
   font-size: 14px;
   font-weight: bold;
   z-index: 999;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.bar:hover {
+  background-color: #b9005f !important;
+  color: white !important;
 }
 
 .display-none {
