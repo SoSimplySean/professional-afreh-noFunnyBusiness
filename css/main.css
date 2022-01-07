@@ -12685,6 +12685,15 @@ body {
   width: 100%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 h2, .h2 {
   font-weight: bold;
 }
@@ -12864,6 +12873,18 @@ h3, .h3 {
 
 .person__header {
   font-size: 18px;
+}
+
+.person .bi-discord,
+.person .bi-instagram {
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.person .bi-discord:hover,
+.person .bi-instagram:hover {
+  color: #b9005f;
 }
 
 .bar {
